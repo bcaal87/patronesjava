@@ -1,0 +1,7 @@
+1. Ejecutar sql/crear_bd.sql en SQL Server Management Studio.
+2. Tener Java 17+, Maven y SQL Server escuchando en TCP 1433 (o cambiar DB_URL).
+3. Definir variables de entorno DB_USER, DB_PASSWORD y opcionalmente DB_URL.
+   PowerShell: $env:DB_USER='usuario'; $env:DB_PASSWORD='clave'
+4. Desde la carpeta del proyecto: mvn clean compile exec:java
+5. Probar registrar, listar, actualizar y eliminar.
+Nota: trustServerCertificate=true es SOLO para laboratorio local; en producción configure TLS y valide el certificado.
